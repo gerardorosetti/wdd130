@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Ubuntu:ital@1&display=swap');
+
+/*  
+  --heading-font: 'Ubuntu', serif, sans-serif;
+  --paragraph-font: 'Roboto Mono', monospace, sans-serif;
+*/
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -7,6 +14,7 @@ nav a{
     text-align: center;
     color: #274690;
     text-decoration: none;
+    padding: 35px;
 }
 
 #hero-msg h1, #hero-msg h4{
@@ -23,11 +31,20 @@ main section{
 
 #background{
     height: 725px;
+    background-color: #A0C1D1;
 }
 
 body{
+    font-size: 22px;
     background-color: #274690;
+    padding: 0;
+    margin: 0;
 }
+
+h2{
+    margin: 0;
+}
+
 header{
     background-color: #A0C1D1;
 }
@@ -39,24 +56,32 @@ nav a:hover{
     background-color: #5B8C5A;
     color: white;
     text-decoration: none;
-
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover{
     background-color: #B77652;
     color: black;
 }
-#background{
-    background-color: #A0C1D1;
-}
+
 .msg{
     background-color: #A0C1D1;
+    line-height: 1.5em;
+    padding: 35px;
+    margin-top: 200px;
 }
 footer{
     background-color: #5B8C5A;
+    padding: 25px 50px;
 }
 
 .home-title{
+    font-family: 'Ubuntu', serif, sans-serif;
     color: white;
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 h4{
@@ -64,11 +89,14 @@ h4{
 }
 
 .msg h2{
+    font-family: 'Ubuntu', serif, sans-serif;
     color: #5B8C5A;
 }
 
 .msg p{
     color : black;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 
 footer a{
@@ -86,6 +114,7 @@ footer a:hover{
 
 .icon{
     width: 80px;
+    padding: 10px;
 }
 
 #hero-img{
@@ -104,3 +133,31 @@ section h2{
     color: white;
 }
 /*by my own - end*/
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ubuntu', serif, sans-serif;
+}
+
+p, /*a included by my own*/a {
+    font-family: 'Roboto Mono', monospace, sans-serif;
+}
+
+#logo_link{
+    padding-top: 5px;
+}
+
+footer .social img{
+    padding-top: 15px;
+}
+
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0;
+}
+
+.card-img{
+    border: 10px solid #B77652;
+}
+
+main section img{
+    box-sizing: border-box;
+}
