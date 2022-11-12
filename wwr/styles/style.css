@@ -271,7 +271,7 @@ main section img{
     box-shadow: 5px 5px 10px #6f7364;
 }
 
-/*New for contac us*/
+/*New for About us*/
 
 .subpage-grid {
     display: grid;
@@ -304,6 +304,7 @@ main section img{
     padding-top: 50px;
     display: flex;
     align-items: center;
+    padding-right: 50px;
 }
 .utah {
     grid-column: 2/4;
@@ -359,6 +360,96 @@ main section img{
     background-color: #5B8C5A;
 }
 
+/*End About Us*/
+
+/*Start Contact Us*/
+
+.subpage2-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, .5fr);
+}
+
+.subpage2-background{
+    width: 100%;
+    grid-column: 1/4;
+    grid-row: 1/2;
+    max-height: 100px;
+}
+
+.contactus-title{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    text-align: center;
+    max-height: 100px;
+    margin: 25px auto;
+}
+
+.mail {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding-top: 50px;
+}
+.mail-img {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding-top: 50px;
+    display: flex;
+    align-items:center;
+    margin-left: auto;
+}
+
+.subpage2-background2{
+    width: 100%;
+    margin-top: 50px;
+    grid-column: 1/4;
+    grid-row: 2/3;
+    background-color: #A0C1D1;
+}
+
+.person1, .person2, .person3{
+    margin: 100px 50px;
+}
+
+.person-img{
+    border: 10px solid #B77652;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.person-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+
+.subpage2-background3{
+    width: 100%;
+    margin-top: 50px;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    background-color: #A0C1D1;
+}
+
+.subpage2-background4{
+    margin-top: 50px;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    background-color: #5B8C5A;
+}
+
+.subpage2-background5{
+    width: 100%;
+    margin-top: 50px;
+    grid-column: 3/4;
+    grid-row: 3/4;
+    background-color: #A0C1D1;
+}
+
+/*End Contact Us*/
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
