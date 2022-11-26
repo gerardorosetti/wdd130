@@ -1,0 +1,240 @@
+/*Start General*/
+h1, h2, h3, h4, h5, h6, .title-link {
+    font-family: 'Ubuntu', serif, sans-serif;
+    padding: 10px;
+    text-align: center;
+    line-height: normal;
+    font-size: 35px;
+}
+.title-link {
+    text-decoration: none;
+    color: #274690;
+    display: block;
+}
+p {
+    font-family: 'Roboto Mono', monospace, sans-serif;
+    font-size: 25px;
+}
+body{
+    background-color: #274690;
+    padding: 0;
+    margin: 0;
+    
+}
+.content {
+    max-width: 1600px;
+    min-width: 1000px;
+    margin: 0 auto;
+}
+/*End General*/
+/*Start Header and Nav*/
+header{
+    display: grid;
+    grid-template-columns: 100px auto;
+    background-color: #A0C1D1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a{
+    text-align: center;
+    color: #274690;
+    text-decoration: none;
+    padding: 35px;
+    font-size: 24px;
+    transition: transform .3s;
+}
+
+nav a:hover{
+    background-color: #274690; 
+    color: white;
+    opacity: .6;
+    transform: scale(1.1);
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+#logo_link{
+    padding-top: 5px;
+    padding-left: 10px;
+    justify-self: center;
+    align-self: center;
+}
+
+.Main-Title{
+    color: white;
+}
+/*End Header and Nav*/
+
+/*Start Index Main*/
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    
+}
+
+.about-me{
+    grid-row: 1/2;
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+
+.about-me p{
+    
+    max-width: 100%;
+    margin-left: 3%;
+    margin-bottom: -1px;
+    margin-top: -1px;
+    padding-top: 2%;
+    text-align: center;
+    grid-column: 2/3;
+    background-color: #A0C1D1;
+}
+
+.about-me-img{
+    
+    text-align: center;
+    grid-column: 1/2;
+    background-color: #A0C1D1;
+}
+
+.about-me-img img{
+    width: 75%;
+    border: 10px solid #5B8C5A;
+}
+
+.go-to-reviews{
+    margin-top: 5%;
+    margin-right: 1%;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    background-color: #A0C1D1;
+    text-align: center;
+    padding: 2%;
+}
+.go-to-reviews img{
+    width: 100%;
+}
+.go-to-reviews a{
+    transition: transform .3s;
+}
+.go-to-reviews a:hover{
+    opacity: .6;
+    transform: scale(1.1);
+}
+
+.go-to-information{
+    margin-top: 5%;
+    margin-left: 1%;
+    padding: 2%;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    background-color: #A0C1D1;
+    position: relative;
+}
+.go-to-information img{
+    width: 100%;
+}
+.go-to-information a{
+    transition: transform .3s;
+}
+.go-to-information a:hover{
+    opacity: .6;
+    transform: scale(1.1);
+}
+
+/*End Index Main*/
+
+/*Start Footer*/
+
+footer{
+    background-color: #A0C1D1;
+    padding: 25px 50px;
+    margin-top: 2%; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer a{
+    color: #274690;
+    text-decoration: none;
+    transition: transform .3s;
+}
+footer .title-link{
+    font-size: 25px;
+}
+footer a:hover{
+    color: #274690;
+    opacity: .6;
+    transform: scale(1.1);
+}
+footer p a:hover{
+    text-decoration: none;
+}
+footer .social img{
+    padding-top: 15px;
+    transition: transform .3s;
+}
+footer .social img:hover{
+    padding-top: 15px;
+    opacity: .9;
+    transform: scale(1.1);
+}
+
+/*End Footer*/
+
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        text-align: center;
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
+    #info{
+        font-size: .75em;
+    }
+}
